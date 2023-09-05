@@ -1,0 +1,12 @@
+<app-navbar></app-navbar>
+
+<h2>Given Surveys Lists</h2>
+<ul>
+  <li *ngFor="let survey of surveyData">
+    
+    <a [routerLink]="['/givenfinalsurvey', survey[0].survey_id]"> Survey Name: {{ survey[0].name | titlecase }}</a>
+    <p > Username: {{ survey[1].name }}</p>
+    <p > Phone no: {{ survey[1].phone }}</p>
+
+  </li>
+</ul>

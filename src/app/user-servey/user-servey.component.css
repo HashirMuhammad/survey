@@ -1,0 +1,54 @@
+/* Style the container for the entire form */
+.bg-purple {
+    background-color: #ffffff; /* White background color */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #000000; /* Text color */
+  }
+  
+  /* Style the input container */
+  .input-container {
+    margin-bottom: 20px;
+  }
+  
+  /* Style the labels */
+  .font-serif {
+    font-family: 'serif';
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* Style the input text fields */
+  .inputtext {
+    width: 99%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  /* Style the select input field */
+  .select-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  /* Style the Submit button */
+.submit-button {
+    background-color: #4285f4; /* Google blue */
+    color: #ffffff; /* Text color */
+    border: none;
+    padding: 10px 15px; /* Adjust padding for button size */
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+  
+  /* Style the Submit button on hover */
+  .submit-button:hover {
+    background-color: #357ae8; /* Darker blue on hover */
+  }
+  

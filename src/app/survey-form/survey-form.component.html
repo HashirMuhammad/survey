@@ -1,0 +1,47 @@
+<app-navbar></app-navbar>
+<h1 class="font-serif">Create Your Survey</h1>
+<div class="form-container">
+  <button class="btn-purple" (click)="addQuestion()">Add Question</button>
+</div>
+<div *ngFor="let question of questions; let i = index" class="question">
+  <select [(ngModel)]="question.type" (change)="onTypeChange(i)" class="select-input">
+    <option value="plain">Plain Text</option>
+    <option value="dropdown">Dropdown</option>
+  </select>
+  <br><br>
+  <input [(ngModel)]="question.question" placeholder="Enter your question" class="inputtext" >
+  <br><br>
+  <input *ngIf="question.type === 'dropdown'" [(ngModel)]="newOption" placeholder="Enter an option" class="inputtext">
+  <br><br>
+  <button *ngIf="question.type === 'dropdown'" (click)="addOption(i)" class="btn-purple">Add Option</button>
+  <ol *ngIf="question.type === 'dropdown'" class="list-decimal">
+    <li *ngFor="let option of question.options" class="font-serif">{{ option | titlecase }}</li>
+  </ol>
+  <!-- Add a validation message for empty question -->
+  <div *ngIf="isQuestionEmpty(question)" class="alert alert-danger">Question cannot be empty.</div>
+</div>
+<br>
+<div class="submit-button-container">
+  <button [disabled]="!isCurrentQuestionComplete()" (click)="submitSurvey()"  class="btn-purple">Submit</button>
+</div>
+<div>
+  <button class="btn-purple" (click)="form()">Preview my Survey Right Now!!</button>
+</div>
+<h2 class="font-serif">Submitted Questions</h2>
+<div class="bg-purple">
+  <button class="btnrefresh" (click)="refresh()">Refresh</button>
+  <div *ngFor="let question of submittedQuestions" class="submitted-question">
+    <p class="font-serif"><strong>Question:</strong> {{ question.question | titlecase }}</p>
+    <ng-container *ngIf="question.type === 'plain'">
+      <input type="text" placeholder="Your answer" class="inputtext">
+    </ng-container>
+    <ng-container *ngIf="question.type === 'dropdown'">
+      <select class="select-input">
+        <option *ngFor="let option of question.options" [value]="option" class="font-serif">{{ option | titlecase }}</option>
+      </select>
+    </ng-container>
+    <div class="container">
+      <button class="delete-button" (click)="deleteQuestion(question._id)">Delete</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<!-- Bootstrap alert -->
+<div class="alert alert-success mt-3" role="alert" *ngIf="isLinkCopied">
+    Link copied successfully!
+  </div>
+  
+<h2 class="copy-link-heading">Copy the link</h2>
+<div class="link-container">
+  <input type="text" [value]="link" readonly />
+  <button class="copy-button" (click)="copyToClipboard()">Copy Link</button>
+</div>
+<button class="close-button" (click)="closeDialog()">X</button>
+

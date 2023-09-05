@@ -1,0 +1,73 @@
+/* Apply a Google Fonts font for headings */
+.font-serif {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  padding-left: 20px;
+}
+
+/* Styling for the form */
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for labels */
+label {
+  display: block;
+  font-weight: bold;
+}
+
+/* Style for input fields */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style for the validation message */
+.alert.alert-danger {
+  margin-top: 5px;
+  padding: 5px;
+  background-color: #f44336;
+  color: #ffffff;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* Style for the submit button */
+button[type="submit"] {
+  background-color: #4285f4;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Style for the "Go to my Surveys" link */
+a {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: #4285f4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hover effect for the link */
+a:hover {
+  text-decoration: underline;
+}

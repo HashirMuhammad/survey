@@ -1,0 +1,25 @@
+<h1>Public Form</h1>
+<div class="bg-purple">
+ <!-- Warning Message Container -->
+<div *ngIf="!isFormValid" class="warning-container">
+  <!-- Warning Message Text -->
+  <p class="warning-text">Please complete all fields before submitting the form.</p>
+</div>
+
+
+  <!-- Submitted Questions -->
+  <div *ngFor="let question of submittedQuestions" class="submitted-question">
+    <p class="font-serif"><strong>Question:</strong> {{ question.question | titlecase }}</p>
+    <ng-container *ngIf="question.type === 'plain'">
+      <input type="text" placeholder="Your answer" class="inputtext" [(ngModel)]="formData[question._id]" />
+    </ng-container>
+    <ng-container *ngIf="question.type === 'dropdown'">
+      <select class="select-input" [(ngModel)]="formData[question._id]">
+        <option *ngFor="let option of question.options" [value]="option" class="font-serif">{{ option | titlecase }}</option>
+      </select>
+    </ng-container>
+    <br>
+  </div>
+  <!-- Submit Button -->
+  <button class="submit-button" (click)="submitForm()">Submit</button>
+</div>

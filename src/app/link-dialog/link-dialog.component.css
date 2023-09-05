@@ -1,0 +1,76 @@
+
+  
+  /* Style the container for the entire link dialog */
+  .link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Style the input text field */
+  .link-container input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Style the copy button */
+  .link-container .copy-button {
+    background-color: #4285f4; /* Google blue */
+    color: #ffffff; /* Text color */
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  /* Style the copy button on hover */
+  .link-container .copy-button:hover {
+    background-color: #357ae8; /* Darker blue on hover */
+  }
+
+  /* Center the entire dialog content */
+  .link-dialog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Style the close button */
+  .close-button {
+    background-color: #f44336; /* Red background color */
+    color: #ffffff; /* Text color */
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  /* Style the "Copy the link" heading */
+  .copy-link-heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-left: 15px;
+
+  }
+.centered-dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* This ensures it covers the entire viewport height */
+}
+
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');

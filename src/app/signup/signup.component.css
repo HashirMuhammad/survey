@@ -1,0 +1,72 @@
+/* Apply a Google Fonts font for headings */
+.signup-heading {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Styling for the signup container */
+.signup-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff; /* White background */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 80px
+}
+
+/* Styling for form groups */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Styling for labels */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Styling for input fields */
+.form-control {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Styling for the Signup button */
+.btn-purple {
+  background-color: #663399; /* Purple color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-purple:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Styling for the login link */
+.login-link {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.login-link a {
+  text-decoration: none;
+  color: #663399; /* Purple color */
+  font-weight: bold;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}

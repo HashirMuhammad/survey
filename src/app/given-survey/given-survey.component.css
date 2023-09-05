@@ -1,0 +1,55 @@
+/* Add this CSS to your component's CSS file or a global stylesheet */
+
+/* Style the list */
+ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Style each list item */
+  li {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Style the survey title */
+  a {
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 5px;
+  }
+  
+  /* Style the user name */
+  p {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the "Preview" link */
+  .preview-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .preview {
+    background-color: #4285f4;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Hover effect for the "Preview" link */
+  .preview:hover {
+    background-color: #357ae8;
+  }
+  

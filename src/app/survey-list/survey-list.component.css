@@ -1,0 +1,60 @@
+/* Style for the survey list */
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+li {
+  display: flex; /* Use flexbox to align items horizontally */
+  justify-content: space-between; /* Space between the link and the "Preview" link */
+  align-items: center; /* Vertically align items */
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  background-color: #ddd;
+}
+
+/* Styling for the links */
+a {
+  text-decoration: none;
+  color: #663399;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Add padding to the link text */
+a {
+  padding: 5px;
+}
+
+/* Style for the "Preview" link container */
+.preview-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Style for the "Delete" button */
+.delete-button {
+  background-color: #f44336;
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  margin-right: 10px; /* Add spacing between "Delete" and "Preview" */
+  cursor: pointer;
+}
+
+/* Style for the "Preview" link */
+.preview {
+  color: #4285f4; /* Blue color for "Preview" link */
+  font-weight: normal;
+}

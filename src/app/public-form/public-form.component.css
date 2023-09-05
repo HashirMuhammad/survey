@@ -1,0 +1,73 @@
+/* Style the container for the entire form */
+.bg-purple {
+    background-color: #ffffff; /* White background color */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #000000; /* Text color */
+  }
+  
+  /* Style the input container */
+  .input-container {
+    margin-bottom: 20px;
+  }
+  
+  /* Style the labels */
+  .font-serif {
+    font-family: 'serif';
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* Style the input text fields */
+  .inputtext {
+    width: 99%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  /* Style the select input field */
+  .select-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  /* Style the submitted questions container */
+  .submitted-question {
+    background-color: #f9f9f9; /* Light gray background color */
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  /* Style the Submit button */
+.submit-button {
+    background-color: #4285f4; /* Google blue */
+    color: #ffffff; /* Text color */
+    border: none;
+    padding: 10px 15px; /* Adjust padding for button size */
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+  
+  /* Style the Submit button on hover */
+  .submit-button:hover {
+    background-color: #357ae8; /* Darker blue on hover */
+  }
+  
+  .warning-container {
+    background-color: #ffe3e3; /* Light red background color */
+    border: 1px solid #ff0000; /* Red border */
+    padding: 10px; /* Padding for spacing */
+    text-align: center; /* Center the text */
+  }
+  
+  .warning-text {
+    color: #ff0000; /* Red text color */
+    font-weight: bold; /* Make the text bold for emphasis */
+  }
+  

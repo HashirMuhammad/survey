@@ -1,0 +1,48 @@
+<app-navbar></app-navbar>
+<div class="client-info-container" *ngIf="clientData">
+  <h2>User Information</h2>
+  <p><strong>Name:</strong> {{ clientData.name }}</p>
+  <p><strong>Email:</strong> {{ clientData.email }}</p>
+  <p><strong>Phone no:</strong> {{ clientData.phone }}</p>
+
+  <!-- Add other client properties as needed -->
+</div>
+<div class="client-not-found" *ngIf="!clientData">
+  <p>Client not found</p>
+</div>
+
+<div class="bg-purple">
+  <div *ngFor="let qa of questionsWithAnswers" class="submitted-question">
+    <p class="font-serif">
+      <strong>Question:</strong>
+      {{ qa.question.question | titlecase }}
+    </p>
+
+    <!-- Display a text input for plain text questions -->
+    <ng-container *ngIf="qa.question.type === 'plain'">
+      <input
+        type="text"
+        placeholder="Your answer"
+        class="inputtext"
+        [readonly]="true" 
+        [(ngModel)]="qa.answers[0].answer" 
+      />
+    </ng-container>
+
+    <!-- Display a dropdown for questions of type 'dropdown' -->
+    <ng-container *ngIf="qa.question.type === 'dropdown'">
+      <select class="select-input" [disabled]="true"> <!-- Add the disabled attribute to prevent changes -->
+        <option
+          *ngFor="let option of qa.question.options"
+          [value]="option"
+          class="font-serif"
+          [selected]="qa.answers[0].answer === option"
+        >
+          {{ option | titlecase }}
+        </option>
+      </select>
+    </ng-container>
+
+    <br />
+  </div>
+</div>

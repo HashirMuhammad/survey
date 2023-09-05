@@ -1,0 +1,21 @@
+<app-navbar></app-navbar>
+<div class="bg-purple">
+    <button class="btnrefresh" (click)="refresh()">Refresh</button>
+    <button class="create-link-button" (click)="openLinkDialog()">Create Link</button>
+    <div *ngFor="let question of submittedQuestions" class="submitted-question">
+      <!-- <p>Type: {{ question.type }}</p> -->
+      <p class="font-serif"><strong>Question:</strong> {{ question.question | titlecase }}</p>
+      <ng-container *ngIf="question.type === 'plain'">
+        <input type="text" placeholder="Your answer" class="inputtext">
+      </ng-container>
+      <ng-container *ngIf="question.type === 'dropdown'">
+        <select class="select-input">
+          <option *ngFor="let option of question.options" [value]="option" class="font-serif">{{ option | titlecase }}</option>
+        </select>
+      </ng-container>
+      <br>
+      <div class="container">
+        <button class="delete-button" (click)="deleteQuestion(question._id)">Delete</button>
+      </div>
+    </div>
+  </div>

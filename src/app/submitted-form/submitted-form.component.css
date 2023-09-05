@@ -1,0 +1,61 @@
+/* Style the container for the entire form */
+.bg-purple {
+  background-color: #f9f9f9; /* Light gray background color */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #000000; /* Text color */
+}
+
+/* Style the "Refresh" button */
+.btnrefresh {
+  background-color: #4285f4; /* Google blue */
+  color: #ffffff; /* Text color */
+  border: none;
+  padding: 10px 15px; /* Adjust padding for button size */
+  cursor: pointer;
+  margin-right: 10px; /* Add some spacing between buttons */
+}
+
+/* Style the "Create Link" button */
+.create-link-button {
+  background-color: #4285f4; /* Google blue */
+  color: #ffffff; /* Text color */
+  border: none;
+  padding: 10px 15px; /* Adjust padding for button size */
+  cursor: pointer;
+}
+
+/* Style the submitted questions container */
+.submitted-question {
+  background-color: #ffffff; /* White background color */
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the question text */
+.font-serif {
+  font-family: 'serif';
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Style the input text field */
+.inputtext, .select-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style the delete button */
+.delete-button {
+  background-color: #f44336; /* Red background color */
+  color: #ffffff; /* Text color */
+  border: none;
+  padding: 10px 15px; /* Adjust padding for button size */
+  cursor: pointer;
+}
+
+

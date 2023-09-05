@@ -1,0 +1,14 @@
+<app-navbar></app-navbar>
+<h2 class="font-serif">Create New Survey</h2>
+<form (ngSubmit)="createSurvey()" #surveyForm="ngForm">
+  <label for="surveyName">Survey Name:</label>
+  <input type="text" id="surveyName" name="surveyName" [(ngModel)]="surveyName" required #surveyNameInput="ngModel" />
+
+  <!-- Add a validation message if the input is invalid -->
+  <div *ngIf="surveyNameInput.invalid && surveyNameInput.touched">
+    <div class="alert alert-danger">Survey Name is required.</div>
+  </div>
+
+  <button type="submit" [disabled]="surveyForm.invalid">Create Survey</button>
+</form>
+<a routerLink="/surveys">No !! Go to my Surveys....</a>
